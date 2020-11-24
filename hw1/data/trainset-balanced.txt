@@ -1,0 +1,84 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.trees.J48 -O -C 0.25 -M 2
+Relation:     balanced-train-weka.filters.unsupervised.attribute.NumericToNominal-R22
+Instances:    279
+Attributes:   22
+              f1
+              f2
+              f3
+              f4
+              f5
+              f6
+              f7
+              f8
+              f9
+              f10
+              f11
+              f12
+              f13
+              f14
+              f15
+              f16
+              f17
+              f18
+              f19
+              f20
+              f21
+              f22
+Test mode:    evaluate on training data
+
+=== Classifier model (full training set) ===
+
+J48 pruned tree
+------------------
+
+f21 <= 0.064: 1 (93.0)
+f21 > 0.064
+|   f17 <= 0.006: 3 (90.0)
+|   f17 > 0.006
+|   |   f3 <= 0: 2 (93.0)
+|   |   f3 > 0: 3 (3.0)
+
+Number of Leaves  : 	4
+
+Size of the tree : 	7
+
+
+Time taken to build model: 0.01 seconds
+
+=== Evaluation on training set ===
+
+Time taken to test model on training data: 0 seconds
+
+=== Summary ===
+
+Correctly Classified Instances         279              100      %
+Incorrectly Classified Instances         0                0      %
+Kappa statistic                          1     
+K&B Relative Info Score                100      %
+K&B Information Score                  442.2045 bits      1.585  bits/instance
+Class complexity | order 0             442.2045 bits      1.585  bits/instance
+Class complexity | scheme                0      bits      0      bits/instance
+Complexity improvement     (Sf)        442.2045 bits      1.585  bits/instance
+Mean absolute error                      0     
+Root mean squared error                  0     
+Relative absolute error                  0      %
+Root relative squared error              0      %
+Total Number of Instances              279     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 1.000    0.000    1.000      1.000    1.000      1.000    1.000     1.000     1
+                 1.000    0.000    1.000      1.000    1.000      1.000    1.000     1.000     2
+                 1.000    0.000    1.000      1.000    1.000      1.000    1.000     1.000     3
+Weighted Avg.    1.000    0.000    1.000      1.000    1.000      1.000    1.000     1.000     
+
+=== Confusion Matrix ===
+
+  a  b  c   <-- classified as
+ 93  0  0 |  a = 1
+  0 93  0 |  b = 2
+  0  0 93 |  c = 3
+

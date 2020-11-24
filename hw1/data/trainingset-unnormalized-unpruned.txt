@@ -1,0 +1,110 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.trees.J48 -O -U -M 2
+Relation:     ann-train-weka.filters.unsupervised.attribute.NumericToNominal-R22
+Instances:    3773
+Attributes:   22
+              f1
+              f2
+              f3
+              f4
+              f5
+              f6
+              f7
+              f8
+              f9
+              f10
+              f11
+              f12
+              f13
+              f14
+              f15
+              f16
+              f17
+              f18
+              f19
+              f20
+              f21
+              f22
+Test mode:    evaluate on training data
+
+=== Classifier model (full training set) ===
+
+J48 unpruned tree
+------------------
+
+f17 <= 0.006: 3 (3410.0)
+f17 > 0.006
+|   f21 <= 0.064
+|   |   f8 <= 0
+|   |   |   f18 <= 0.023: 1 (88.0)
+|   |   |   f18 > 0.023
+|   |   |   |   f17 <= 0.022: 3 (2.0)
+|   |   |   |   f17 > 0.022: 1 (3.0)
+|   |   f8 > 0
+|   |   |   f19 <= 0.049: 3 (3.0)
+|   |   |   f19 > 0.049: 1 (2.0)
+|   f21 > 0.064
+|   |   f3 <= 0
+|   |   |   f19 <= 0.15
+|   |   |   |   f8 <= 0
+|   |   |   |   |   f18 <= 0.03
+|   |   |   |   |   |   f2 <= 0
+|   |   |   |   |   |   |   f10 <= 0
+|   |   |   |   |   |   |   |   f11 <= 0
+|   |   |   |   |   |   |   |   |   f6 <= 0
+|   |   |   |   |   |   |   |   |   |   f14 <= 0: 2 (107.0/1.0)
+|   |   |   |   |   |   |   |   |   |   f14 > 0: 2 (4.0)
+|   |   |   |   |   |   |   |   |   f6 > 0: 2 (5.0)
+|   |   |   |   |   |   |   |   f11 > 0: 2 (7.0)
+|   |   |   |   |   |   |   f10 > 0: 2 (22.0)
+|   |   |   |   |   |   f2 > 0: 2 (42.0)
+|   |   |   |   |   f18 > 0.03
+|   |   |   |   |   |   f1 <= 0.37: 2 (5.0)
+|   |   |   |   |   |   f1 > 0.37: 3 (2.0)
+|   |   |   |   f8 > 0: 3 (7.0)
+|   |   |   f19 > 0.15: 3 (10.0)
+|   |   f3 > 0: 3 (54.0)
+
+Number of Leaves  : 	17
+
+Size of the tree : 	33
+
+
+Time taken to build model: 0.01 seconds
+
+=== Evaluation on training set ===
+
+Time taken to test model on training data: 0 seconds
+
+=== Summary ===
+
+Correctly Classified Instances        3772               99.9735 %
+Incorrectly Classified Instances         1                0.0265 %
+Kappa statistic                          0.9981
+K&B Relative Info Score                 99.693  %
+K&B Information Score                 1707.5683 bits      0.4526 bits/instance
+Class complexity | order 0            1712.8271 bits      0.454  bits/instance
+Class complexity | scheme                8.1774 bits      0.0022 bits/instance
+Complexity improvement     (Sf)       1704.6497 bits      0.4518 bits/instance
+Mean absolute error                      0.0004
+Root mean squared error                  0.0132
+Relative absolute error                  0.3695 %
+Root relative squared error              6.0875 %
+Total Number of Instances             3773     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 1.000    0.000    1.000      1.000    1.000      1.000    1.000     1.000     1
+                 1.000    0.000    0.995      1.000    0.997      0.997    1.000     0.997     2
+                 1.000    0.000    1.000      1.000    1.000      0.998    1.000     1.000     3
+Weighted Avg.    1.000    0.000    1.000      1.000    1.000      0.998    1.000     1.000     
+
+=== Confusion Matrix ===
+
+    a    b    c   <-- classified as
+   93    0    0 |    a = 1
+    0  191    0 |    b = 2
+    0    1 3488 |    c = 3
+
