@@ -1,0 +1,23 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "S",
+            "type": "python",
+            "request": "launch",
+            "program": "main.py",
+            "args": ["cnf/f_s.cnf", "data/train2", "data/test2"],
+            "console": "integratedTerminal"
+        },{
+            "name": "B",
+            "type": "python",
+            "request": "launch",
+            "program": "main.py",
+            "args": ["cnf/f_b.cnf", "data/train2", "data/test2"],
+            "console": "integratedTerminal"
+        }
+    ]
+}
